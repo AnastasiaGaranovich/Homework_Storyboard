@@ -6,7 +6,7 @@ extension UITextField {
     }
 }
 
-class ViewController: UIViewController {
+class SignInViewController: UIViewController {
     
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     
     @IBAction func createAccountButtonPressed(_ sender: UIButton) {
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "SignIn", bundle: nil)
         let viewController = mainStoryboard.instantiateViewController(withIdentifier: "CreateAccountController")
         self.view.window?.rootViewController = viewController
         self.view.window?.makeKeyAndVisible()
