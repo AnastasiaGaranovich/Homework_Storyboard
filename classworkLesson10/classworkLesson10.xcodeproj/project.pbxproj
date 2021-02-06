@@ -10,6 +10,7 @@
 		4EBDA226FD1E9AE091DCBA4A /* libPods-classworkLesson10.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7321182BA2D6E4D8B558CF7 /* libPods-classworkLesson10.a */; };
 		5D90F1E425CE9BE600524FC3 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D90F1E325CE9BE600524FC3 /* UserData.swift */; };
 		5D90F1E725CE9D3300524FC3 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D90F1E625CE9D3300524FC3 /* MainScreen.storyboard */; };
+		5D90F1EA25CEAD9900524FC3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D90F1E925CEAD9900524FC3 /* Utils.swift */; };
 		5DB008C425CDDA0A006EEBC8 /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB008C325CDDA0A006EEBC8 /* CreateAccount.storyboard */; };
 		5DB008C825CDEEB3006EEBC8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB008C725CDEEB3006EEBC8 /* Profile.storyboard */; };
 		5DB008CC25CDF93E006EEBC8 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB008CB25CDF93E006EEBC8 /* VerificationViewController.swift */; };
@@ -28,6 +29,7 @@
 		4A0198D8ADB884644036ED7E /* Pods-classworkLesson10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-classworkLesson10.release.xcconfig"; path = "Target Support Files/Pods-classworkLesson10/Pods-classworkLesson10.release.xcconfig"; sourceTree = "<group>"; };
 		5D90F1E325CE9BE600524FC3 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		5D90F1E625CE9D3300524FC3 /* MainScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
+		5D90F1E925CEAD9900524FC3 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5DB008C325CDDA0A006EEBC8 /* CreateAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
 		5DB008C725CDEEB3006EEBC8 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		5DB008CB25CDF93E006EEBC8 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				5DB008D425CDFA36006EEBC8 /* Storyboards */,
 				5DBEB82425CB07F2009FA5E2 /* Assets.xcassets */,
 				5DBEB82925CB07F2009FA5E2 /* Info.plist */,
+				5D90F1E925CEAD9900524FC3 /* Utils.swift */,
 			);
 			path = classworkLesson10;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			files = (
 				5DBEB82025CB07F1009FA5E2 /* SignInViewController.swift in Sources */,
 				5DBEB83525CB1821009FA5E2 /* CreateAccountController.swift in Sources */,
+				5D90F1EA25CEAD9900524FC3 /* Utils.swift in Sources */,
 				5D90F1E425CE9BE600524FC3 /* UserData.swift in Sources */,
 				5DB008CC25CDF93E006EEBC8 /* VerificationViewController.swift in Sources */,
 				5DBEB81C25CB07F1009FA5E2 /* AppDelegate.swift in Sources */,

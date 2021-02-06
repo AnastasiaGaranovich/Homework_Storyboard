@@ -1,13 +1,6 @@
 import UIKit
 
-extension UITextField {
-    var isEmpty: Bool {
-        return text?.isEmpty ?? true
-    }
-}
-
 class SignInViewController: UIViewController {
-    
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -22,10 +15,10 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func emailTextFieldChanged(_ sender: UITextField) {
-        signInButton.isHidden = isEmptyTextField()
+        signInButton.isHidden = signInButtonHidden()
     }
     @IBAction func passwordTextFieldChanged(_ sender: UITextField) {
-        signInButton.isHidden = isEmptyTextField()
+        signInButton.isHidden = signInButtonHidden()
     }
     
     
@@ -33,8 +26,8 @@ class SignInViewController: UIViewController {
         
     }
     
-    private func isEmptyTextField() -> Bool {
-        return emailTextField.isEmpty || passwordTextField.isEmpty
+    private func signInButtonHidden() -> Bool {
+        return !emailTextField.hasValidEmail || passwordTextField.isEmpty
     }
     
     override func viewDidLoad() {
