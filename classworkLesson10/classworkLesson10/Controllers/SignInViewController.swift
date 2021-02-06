@@ -15,16 +15,16 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     
     @IBAction func createAccountButtonPressed(_ sender: UIButton) {
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "SignIn", bundle: nil)
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "CreateAccount", bundle: nil)
         let viewController = mainStoryboard.instantiateViewController(withIdentifier: "CreateAccountController")
         self.view.window?.rootViewController = viewController
         self.view.window?.makeKeyAndVisible()
     }
     
-    @IBAction func emailTextField(_ sender: UITextField) {
+    @IBAction func emailTextFieldChanged(_ sender: UITextField) {
         signInButton.isHidden = isEmptyTextField()
     }
-    @IBAction func passwordTextField(_ sender: UITextField) {
+    @IBAction func passwordTextFieldChanged(_ sender: UITextField) {
         signInButton.isHidden = isEmptyTextField()
     }
     

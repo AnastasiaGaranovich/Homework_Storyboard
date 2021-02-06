@@ -1,0 +1,3 @@
+target 'classworkLesson10' do
+  pod 'IQKeyboardManagerSwift'
+end

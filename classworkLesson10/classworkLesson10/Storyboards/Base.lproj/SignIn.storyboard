@@ -11,7 +11,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SignInViewController" customModule="classworkLesson10" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SignInViewController" customModule="classworkLesson10" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +33,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                                         <connections>
-                                            <action selector="emailTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="n4a-RG-6HA"/>
+                                            <action selector="emailTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="LWW-vx-V1I"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nJH-83-yjv">
@@ -41,7 +41,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                         <connections>
-                                            <action selector="passwordTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="1az-aE-4fT"/>
+                                            <action selector="passwordTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="2ZJ-WB-1vA"/>
                                         </connections>
                                     </textField>
                                 </subviews>
