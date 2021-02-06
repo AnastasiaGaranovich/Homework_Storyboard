@@ -75,3 +75,5 @@ DerivedData/
 ## Gcc Patch
 /*.gcno
 
+Pods/
+*.xcworkspacedata
