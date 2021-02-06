@@ -79,8 +79,8 @@
                                     <action selector="createAccountButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C6P-1P-sJz"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save token" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBe-Nq-tdD">
-                                <rect key="frame" x="20" y="450" width="83.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBe-Nq-tdD">
+                                <rect key="frame" x="20" y="450" width="0.0" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="mGT-8d-whd"/>
                                 </constraints>
@@ -90,9 +90,6 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2Yu-VM-ywQ">
                                 <rect key="frame" x="343" y="445" width="51" height="31"/>
-                                <connections>
-                                    <action selector="tokenSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="osR-px-Nwm"/>
-                                </connections>
                             </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -116,9 +113,10 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="vtD-G6-uDh" id="Km6-o0-ahU"/>
+                        <outlet property="errorLabel" destination="RBe-Nq-tdD" id="t2I-Po-c3Q"/>
                         <outlet property="passwordTextField" destination="nJH-83-yjv" id="gY3-3X-wl2"/>
+                        <outlet property="saveTokenSwitch" destination="2Yu-VM-ywQ" id="OfH-y5-LSc"/>
                         <outlet property="signInButton" destination="2fo-IC-rsn" id="RHa-Do-WFR"/>
-                        <outlet property="tokenLabel" destination="RBe-Nq-tdD" id="t2I-Po-c3Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

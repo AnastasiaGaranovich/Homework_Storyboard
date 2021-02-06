@@ -1,6 +1,6 @@
 import Foundation
 
-class UserData {
+class User {
     var login = ""
     var name = ""
     var surname = ""
@@ -8,4 +8,7 @@ class UserData {
     var amountOfChildren = 0
     var smoking = false
     var vegetarian = false
+    
+    init() {
+    }
 }
