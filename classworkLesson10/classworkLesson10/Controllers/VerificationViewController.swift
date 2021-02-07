@@ -17,9 +17,7 @@ class VerificationViewController: UIViewController {
         }
         if sender.tag == 3 {
             if checkCode() {
-                let mainStoryboard: UIStoryboard = UIStoryboard(name: "CreateAccount", bundle: nil)
-                let viewController = mainStoryboard.instantiateViewController(withIdentifier: "PasswordViewController")
-                navigationController?.pushViewController(viewController, animated: true)
+                pushController(storyboard: "CreateAccount", name: "PasswordViewController")
             }
             else {
                 errorLabel.text = "Error. Invalid verification code."

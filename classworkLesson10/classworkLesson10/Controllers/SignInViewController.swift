@@ -9,10 +9,7 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var saveTokenSwitch: UISwitch!
     
     @IBAction func createAccountButtonPressed(_ sender: UIButton) {
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "CreateAccount", bundle: nil)
-        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "CreateAccountNavigation")
-        self.view.window?.rootViewController = viewController
-        self.view.window?.makeKeyAndVisible()
+        showController(storyboard: "CreateAccount", name: "CreateAccountNavigation")
     }
     
     @IBAction func emailTextFieldChanged(_ sender: UITextField) {
@@ -26,10 +23,7 @@ class SignInViewController: UIViewController {
         if saveTokenSwitch.isOn {
             Defaults.token = Date()
         }
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "MainScreen", bundle: nil)
-        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "MainScreenViewController")
-        self.view.window?.rootViewController = viewController
-        self.view.window?.makeKeyAndVisible()
+        showController(storyboard: "MainScreen", name: "MainScreenViewController")
     }
     
     private func signInButtonHidden() -> Bool {
