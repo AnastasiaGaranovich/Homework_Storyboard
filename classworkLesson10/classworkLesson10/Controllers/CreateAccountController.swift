@@ -33,4 +33,9 @@ class CreateAccountController: UIViewController {
         errorLabel.text = ""
         return false
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
 }

@@ -45,5 +45,6 @@ class VerificationViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         codeTextFields[0].becomeFirstResponder()
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 }
