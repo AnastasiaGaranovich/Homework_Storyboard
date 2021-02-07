@@ -19,10 +19,15 @@ class CreateAccountController: UIViewController {
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
-        emailTextField.text = AppData.user.login
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "CreateAccount", bundle: nil)
-        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "VerificationViewController")
-        self.navigationController?.pushViewController(viewController, animated: true)
+        if let userEmail = emailTextField.text {
+            let user = Defaults.user
+            user.login = userEmail
+            Defaults.user = user
+            let mainStoryboard: UIStoryboard = UIStoryboard(name: "CreateAccount", bundle: nil)
+            let viewController = mainStoryboard.instantiateViewController(withIdentifier: "VerificationViewController")
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+        return
     }
     
     private func signUpButtonHidden() -> Bool {

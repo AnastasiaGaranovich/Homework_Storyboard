@@ -25,7 +25,6 @@
 		5DBEB83525CB1821009FA5E2 /* CreateAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBEB83425CB1821009FA5E2 /* CreateAccountController.swift */; };
 		5DE9AABC25CEFBD4001222AF /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE9AABB25CEFBD4001222AF /* Defaults.swift */; };
 		5DE9AABF25CF0340001222AF /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE9AABE25CF0340001222AF /* MainScreenViewController.swift */; };
-		5DE9AAC325CF11D4001222AF /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE9AAC225CF11D4001222AF /* AppData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +48,6 @@
 		5DBEB83425CB1821009FA5E2 /* CreateAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountController.swift; sourceTree = "<group>"; };
 		5DE9AABB25CEFBD4001222AF /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		5DE9AABE25CF0340001222AF /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
-		5DE9AAC225CF11D4001222AF /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		925DEE8836EDA6DE22C8A28A /* Pods-classworkLesson10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-classworkLesson10.debug.xcconfig"; path = "Target Support Files/Pods-classworkLesson10/Pods-classworkLesson10.debug.xcconfig"; sourceTree = "<group>"; };
 		C7321182BA2D6E4D8B558CF7 /* libPods-classworkLesson10.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-classworkLesson10.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				5D90F1E325CE9BE600524FC3 /* User.swift */,
-				5DE9AAC225CF11D4001222AF /* AppData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -261,7 +258,6 @@
 				5DE9AABC25CEFBD4001222AF /* Defaults.swift in Sources */,
 				5DBEB81E25CB07F1009FA5E2 /* SceneDelegate.swift in Sources */,
 				5DB008CF25CDF987006EEBC8 /* PasswordViewController.swift in Sources */,
-				5DE9AAC325CF11D4001222AF /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

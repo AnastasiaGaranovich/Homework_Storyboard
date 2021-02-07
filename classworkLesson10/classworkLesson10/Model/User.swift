@@ -1,6 +1,6 @@
 import Foundation
 
-class User {
+class User: Codable {
     var login = ""
     var name = ""
     var surname = ""
