@@ -3,11 +3,84 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="QFc-t5-73l">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4zd-Hk-Cab" customClass="MenuViewController" customModule="classworkLesson10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="77h-8s-CaI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rll-J2-O2v">
+                                <rect key="frame" x="347" y="44" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="gjt-RL-gVB"/>
+                                    <constraint firstAttribute="height" constant="40" id="xEF-O5-uWR"/>
+                                </constraints>
+                                <color key="tintColor" red="0.81568627449999997" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="person.crop.circle" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="userDataButtonPressed:" destination="4zd-Hk-Cab" eventType="touchUpInside" id="lCm-iz-SWC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k0q-Oe-3f3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="k0q-Oe-3f3" firstAttribute="trailing" secondItem="Rll-J2-O2v" secondAttribute="trailing" constant="27" id="2Nc-0h-U9v"/>
+                            <constraint firstItem="Rll-J2-O2v" firstAttribute="top" secondItem="k0q-Oe-3f3" secondAttribute="top" id="W8d-ii-KQB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" selectedImage="person" catalog="system" id="PKz-RF-8l8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sCX-kn-aYr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2062" y="782"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="M8V-U4-lpI">
+            <objects>
+                <viewController id="4Bz-0z-tH7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GtA-KV-L7v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fk7-lL-1Lk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" selectedImage="square.and.arrow.up" catalog="system" id="s88-Kj-SxP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJn-02-ZCQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1280" y="781"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bhH-Po-MTR">
+            <objects>
+                <tabBarController id="JP3-FA-UmF" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gcv-IB-XLu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4Bz-0z-tH7" kind="relationship" relationship="viewControllers" id="1Ec-lT-Ttw"/>
+                        <segue destination="4zd-Hk-Cab" kind="relationship" relationship="viewControllers" id="mVZ-ci-5sg"/>
+                        <segue destination="1mi-br-gna" kind="relationship" relationship="viewControllers" id="Shv-Qk-2LV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yaB-Qh-KRV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1281" y="-22"/>
+        </scene>
         <!--Main Screen View Controller-->
         <scene sceneID="XaA-hn-jJQ">
             <objects>
@@ -17,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOD-pI-FnY">
-                                <rect key="frame" x="154" y="438" width="106.5" height="30"/>
+                                <rect key="frame" x="154" y="413.5" width="106.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -30,13 +103,18 @@
                             <constraint firstItem="iOD-pI-FnY" firstAttribute="centerX" secondItem="l6p-fd-2tu" secondAttribute="centerX" id="I9Y-D2-dYY"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" selectedImage="book" catalog="system" id="bid-6f-7Pi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUG-uf-VGC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-180" y="37"/>
+            <point key="canvasLocation" x="-439" y="781"/>
         </scene>
     </scenes>
     <resources>
+        <image name="book" catalog="system" width="128" height="102"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

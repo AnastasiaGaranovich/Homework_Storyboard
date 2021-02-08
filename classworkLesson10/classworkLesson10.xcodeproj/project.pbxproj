@@ -11,6 +11,14 @@
 		5D90F1E425CE9BE600524FC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D90F1E325CE9BE600524FC3 /* User.swift */; };
 		5D90F1E725CE9D3300524FC3 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D90F1E625CE9D3300524FC3 /* MainScreen.storyboard */; };
 		5D90F1EA25CEAD9900524FC3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D90F1E925CEAD9900524FC3 /* Utils.swift */; };
+		5DA8684425D1A21000C565A9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8684325D1A21000C565A9 /* MenuViewController.swift */; };
+		5DA8684B25D1A43000C565A9 /* UserData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA8684A25D1A43000C565A9 /* UserData.storyboard */; };
+		5DA8684E25D1A46700C565A9 /* UserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8684D25D1A46700C565A9 /* UserDataViewController.swift */; };
+		5DA8685225D1B07400C565A9 /* EditTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA8685125D1B07400C565A9 /* EditTextFieldCell.xib */; };
+		5DA8685525D1B14500C565A9 /* EditDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA8685425D1B14500C565A9 /* EditDateCell.xib */; };
+		5DA8685825D1B27B00C565A9 /* EditSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA8685725D1B27B00C565A9 /* EditSwitchCell.xib */; };
+		5DA8685B25D1B2CE00C565A9 /* EditSegmControlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA8685A25D1B2CE00C565A9 /* EditSegmControlCell.xib */; };
+		5DA8685E25D1B33800C565A9 /* EditStepperCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA8685D25D1B33800C565A9 /* EditStepperCell.xib */; };
 		5DB008C425CDDA0A006EEBC8 /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB008C325CDDA0A006EEBC8 /* CreateAccount.storyboard */; };
 		5DB008C825CDEEB3006EEBC8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB008C725CDEEB3006EEBC8 /* Profile.storyboard */; };
 		5DB008CC25CDF93E006EEBC8 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB008CB25CDF93E006EEBC8 /* VerificationViewController.swift */; };
@@ -33,6 +41,14 @@
 		5D90F1E325CE9BE600524FC3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5D90F1E625CE9D3300524FC3 /* MainScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
 		5D90F1E925CEAD9900524FC3 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5DA8684325D1A21000C565A9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		5DA8684A25D1A43000C565A9 /* UserData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserData.storyboard; sourceTree = "<group>"; };
+		5DA8684D25D1A46700C565A9 /* UserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewController.swift; sourceTree = "<group>"; };
+		5DA8685125D1B07400C565A9 /* EditTextFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditTextFieldCell.xib; sourceTree = "<group>"; };
+		5DA8685425D1B14500C565A9 /* EditDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditDateCell.xib; sourceTree = "<group>"; };
+		5DA8685725D1B27B00C565A9 /* EditSwitchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditSwitchCell.xib; sourceTree = "<group>"; };
+		5DA8685A25D1B2CE00C565A9 /* EditSegmControlCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditSegmControlCell.xib; sourceTree = "<group>"; };
+		5DA8685D25D1B33800C565A9 /* EditStepperCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditStepperCell.xib; sourceTree = "<group>"; };
 		5DB008C325CDDA0A006EEBC8 /* CreateAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
 		5DB008C725CDEEB3006EEBC8 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		5DB008CB25CDF93E006EEBC8 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +91,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5DA8685025D1AFD200C565A9 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5DA8685125D1B07400C565A9 /* EditTextFieldCell.xib */,
+				5DA8685425D1B14500C565A9 /* EditDateCell.xib */,
+				5DA8685725D1B27B00C565A9 /* EditSwitchCell.xib */,
+				5DA8685A25D1B2CE00C565A9 /* EditSegmControlCell.xib */,
+				5DA8685D25D1B33800C565A9 /* EditStepperCell.xib */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
 		5DB008D425CDFA36006EEBC8 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +111,7 @@
 				5DB008C325CDDA0A006EEBC8 /* CreateAccount.storyboard */,
 				5DBEB82125CB07F1009FA5E2 /* SignIn.storyboard */,
 				5D90F1E625CE9D3300524FC3 /* MainScreen.storyboard */,
+				5DA8684A25D1A43000C565A9 /* UserData.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -118,6 +147,7 @@
 		5DBEB81A25CB07F1009FA5E2 /* classworkLesson10 */ = {
 			isa = PBXGroup;
 			children = (
+				5DA8685025D1AFD200C565A9 /* Custom Cells */,
 				5DD6DDA925D061E200FF9BDE /* Delegate */,
 				5DB008D525CDFA5E006EEBC8 /* Model */,
 				5DBEB83225CB17D6009FA5E2 /* Controllers */,
@@ -138,6 +168,8 @@
 				5DB008CE25CDF987006EEBC8 /* PasswordViewController.swift */,
 				5DB008D125CDF9C4006EEBC8 /* ProfileViewController.swift */,
 				5DE9AABE25CF0340001222AF /* MainScreenViewController.swift */,
+				5DA8684325D1A21000C565A9 /* MenuViewController.swift */,
+				5DA8684D25D1A46700C565A9 /* UserDataViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -226,11 +258,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DB008C425CDDA0A006EEBC8 /* CreateAccount.storyboard in Resources */,
+				5DA8684B25D1A43000C565A9 /* UserData.storyboard in Resources */,
 				5DBEB82825CB07F2009FA5E2 /* LaunchScreen.storyboard in Resources */,
+				5DA8685525D1B14500C565A9 /* EditDateCell.xib in Resources */,
 				5DB008C825CDEEB3006EEBC8 /* Profile.storyboard in Resources */,
 				5DBEB82525CB07F2009FA5E2 /* Assets.xcassets in Resources */,
 				5DBEB82325CB07F1009FA5E2 /* SignIn.storyboard in Resources */,
 				5D90F1E725CE9D3300524FC3 /* MainScreen.storyboard in Resources */,
+				5DA8685B25D1B2CE00C565A9 /* EditSegmControlCell.xib in Resources */,
+				5DA8685E25D1B33800C565A9 /* EditStepperCell.xib in Resources */,
+				5DA8685225D1B07400C565A9 /* EditTextFieldCell.xib in Resources */,
+				5DA8685825D1B27B00C565A9 /* EditSwitchCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,10 +307,12 @@
 				5DBEB82025CB07F1009FA5E2 /* SignInViewController.swift in Sources */,
 				5DBEB83525CB1821009FA5E2 /* CreateAccountController.swift in Sources */,
 				5D90F1EA25CEAD9900524FC3 /* Utils.swift in Sources */,
+				5DA8684E25D1A46700C565A9 /* UserDataViewController.swift in Sources */,
 				5DE9AABF25CF0340001222AF /* MainScreenViewController.swift in Sources */,
 				5D90F1E425CE9BE600524FC3 /* User.swift in Sources */,
 				5DB008CC25CDF93E006EEBC8 /* VerificationViewController.swift in Sources */,
 				5DBEB81C25CB07F1009FA5E2 /* AppDelegate.swift in Sources */,
+				5DA8684425D1A21000C565A9 /* MenuViewController.swift in Sources */,
 				5DB008D225CDF9C5006EEBC8 /* ProfileViewController.swift in Sources */,
 				5DE9AABC25CEFBD4001222AF /* Defaults.swift in Sources */,
 				5DBEB81E25CB07F1009FA5E2 /* SceneDelegate.swift in Sources */,
