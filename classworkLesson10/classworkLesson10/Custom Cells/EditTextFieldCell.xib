@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Qnf-GU-ggX">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EditTextFieldCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Qnf-GU-ggX" customClass="EditTextFieldCell" customModule="classworkLesson10" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qnf-GU-ggX" id="5Lm-pt-bY9">
@@ -32,9 +32,17 @@
                         <rect key="frame" x="344" y="7" width="46" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="editDoneButtonPressed:" destination="Qnf-GU-ggX" eventType="touchUpInside" id="82u-Th-vuh"/>
+                        </connections>
                     </button>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="editDoneButton" destination="s89-uJ-znk" id="0gT-oy-mTF"/>
+                <outlet property="editTextField" destination="ib0-5d-k9p" id="1cy-Be-lPl"/>
+                <outlet property="profileLabel" destination="dfy-im-lcT" id="Wwj-KF-tgk"/>
+            </connections>
             <point key="canvasLocation" x="84.057971014492765" y="66.964285714285708"/>
         </tableViewCell>
     </objects>

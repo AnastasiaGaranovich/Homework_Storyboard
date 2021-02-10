@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4EBDA226FD1E9AE091DCBA4A /* libPods-classworkLesson10.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7321182BA2D6E4D8B558CF7 /* libPods-classworkLesson10.a */; };
+		5D25D87A25D43ED70025F4F4 /* UserDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D25D87925D43ED70025F4F4 /* UserDataCell.xib */; };
+		5D25D87D25D440DD0025F4F4 /* UserDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25D87C25D440DD0025F4F4 /* UserDataCell.swift */; };
+		5D25D88025D4495A0025F4F4 /* EditTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25D87F25D4495A0025F4F4 /* EditTextFieldCell.swift */; };
 		5D90F1E425CE9BE600524FC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D90F1E325CE9BE600524FC3 /* User.swift */; };
 		5D90F1E725CE9D3300524FC3 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D90F1E625CE9D3300524FC3 /* MainScreen.storyboard */; };
 		5D90F1EA25CEAD9900524FC3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D90F1E925CEAD9900524FC3 /* Utils.swift */; };
@@ -38,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		4A0198D8ADB884644036ED7E /* Pods-classworkLesson10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-classworkLesson10.release.xcconfig"; path = "Target Support Files/Pods-classworkLesson10/Pods-classworkLesson10.release.xcconfig"; sourceTree = "<group>"; };
+		5D25D87925D43ED70025F4F4 /* UserDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDataCell.xib; sourceTree = "<group>"; };
+		5D25D87C25D440DD0025F4F4 /* UserDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCell.swift; sourceTree = "<group>"; };
+		5D25D87F25D4495A0025F4F4 /* EditTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTextFieldCell.swift; sourceTree = "<group>"; };
 		5D90F1E325CE9BE600524FC3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5D90F1E625CE9D3300524FC3 /* MainScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
 		5D90F1E925CEAD9900524FC3 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -99,6 +105,9 @@
 				5DA8685725D1B27B00C565A9 /* EditSwitchCell.xib */,
 				5DA8685A25D1B2CE00C565A9 /* EditSegmControlCell.xib */,
 				5DA8685D25D1B33800C565A9 /* EditStepperCell.xib */,
+				5D25D87925D43ED70025F4F4 /* UserDataCell.xib */,
+				5D25D87C25D440DD0025F4F4 /* UserDataCell.swift */,
+				5D25D87F25D4495A0025F4F4 /* EditTextFieldCell.swift */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -266,6 +275,7 @@
 				5DBEB82325CB07F1009FA5E2 /* SignIn.storyboard in Resources */,
 				5D90F1E725CE9D3300524FC3 /* MainScreen.storyboard in Resources */,
 				5DA8685B25D1B2CE00C565A9 /* EditSegmControlCell.xib in Resources */,
+				5D25D87A25D43ED70025F4F4 /* UserDataCell.xib in Resources */,
 				5DA8685E25D1B33800C565A9 /* EditStepperCell.xib in Resources */,
 				5DA8685225D1B07400C565A9 /* EditTextFieldCell.xib in Resources */,
 				5DA8685825D1B27B00C565A9 /* EditSwitchCell.xib in Resources */,
@@ -305,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DBEB82025CB07F1009FA5E2 /* SignInViewController.swift in Sources */,
+				5D25D88025D4495A0025F4F4 /* EditTextFieldCell.swift in Sources */,
 				5DBEB83525CB1821009FA5E2 /* CreateAccountController.swift in Sources */,
 				5D90F1EA25CEAD9900524FC3 /* Utils.swift in Sources */,
 				5DA8684E25D1A46700C565A9 /* UserDataViewController.swift in Sources */,
@@ -315,6 +326,7 @@
 				5DA8684425D1A21000C565A9 /* MenuViewController.swift in Sources */,
 				5DB008D225CDF9C5006EEBC8 /* ProfileViewController.swift in Sources */,
 				5DE9AABC25CEFBD4001222AF /* Defaults.swift in Sources */,
+				5D25D87D25D440DD0025F4F4 /* UserDataCell.swift in Sources */,
 				5DBEB81E25CB07F1009FA5E2 /* SceneDelegate.swift in Sources */,
 				5DB008CF25CDF987006EEBC8 /* PasswordViewController.swift in Sources */,
 				5DD6DDA725D059B600FF9BDE /* AppData.swift in Sources */,
