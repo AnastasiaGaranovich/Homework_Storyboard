@@ -28,7 +28,7 @@ class ProfileViewController: UIViewController {
         AppData.user.vegetarian = vegetarianSwitch.isOn
         AppData.user.amountOfChildren = Int(kidsStepper.value)
         AppData.saveUser()
-        showController(storyboard: "MainScreen", name: "MainScreenViewController")
+        showController(storyboard: "MainScreen", name: "MainTabBarController")
     }
     
     override func viewDidLoad() {

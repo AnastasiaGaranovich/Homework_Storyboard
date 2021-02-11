@@ -53,4 +53,13 @@ extension UIViewController {
     }
 }
 
-
+extension Bool {
+    var toString: String {
+        if self {
+            return "Yes"
+        }
+        else {
+            return "No"
+        }
+    }
+}

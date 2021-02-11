@@ -3,37 +3,66 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--User Data View Controller-->
-        <scene sceneID="OVT-aX-WEi">
+        <scene sceneID="e7o-48-rJ1">
             <objects>
-                <tableViewController storyboardIdentifier="UserDataViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MaW-cL-qVB" customClass="UserDataViewController" customModule="classworkLesson10" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bMH-fN-Gmd">
+                <viewController storyboardIdentifier="UserDataViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Md9-9J-ebW" customClass="UserDataViewController" customModule="classworkLesson10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DqI-Ld-rjh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgJ-5D-EbB">
+                                <rect key="frame" x="322" y="58" width="51" height="30"/>
+                                <state key="normal" title="LogOut">
+                                    <color key="titleColor" red="0.81568627449999997" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutButtonPressed:" destination="Md9-9J-ebW" eventType="touchUpInside" id="lNm-wE-6gz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRP-mU-CAd">
+                                <rect key="frame" x="154.5" y="758" width="105" height="30"/>
+                                <state key="normal" title="Delete Account">
+                                    <color key="titleColor" red="0.81568627449999997" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteAccountButtonPressed:" destination="Md9-9J-ebW" eventType="touchUpInside" id="R7Z-Jt-RZs"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oF1-1G-9hc">
+                                <rect key="frame" x="20" y="133" width="374" height="576"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Md9-9J-ebW" id="kp2-7y-lNy"/>
+                                    <outlet property="delegate" destination="Md9-9J-ebW" id="NEf-24-Ujr"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Md-el-qt7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="onG-gg-9E6">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="onG-gg-9E6" id="ZFG-33-bQ9">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="MaW-cL-qVB" id="pBz-Sc-Q56"/>
-                            <outlet property="delegate" destination="MaW-cL-qVB" id="2dk-oe-0Ta"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SW5-mv-a2C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="2Md-el-qt7" firstAttribute="bottom" secondItem="BRP-mU-CAd" secondAttribute="bottom" constant="74" id="7Ll-ko-vCi"/>
+                            <constraint firstItem="oF1-1G-9hc" firstAttribute="leading" secondItem="2Md-el-qt7" secondAttribute="leading" constant="20" id="KvU-eQ-jRs"/>
+                            <constraint firstItem="oF1-1G-9hc" firstAttribute="top" secondItem="2Md-el-qt7" secondAttribute="top" constant="89" id="RdM-8U-Xmc"/>
+                            <constraint firstItem="RgJ-5D-EbB" firstAttribute="top" secondItem="2Md-el-qt7" secondAttribute="top" constant="14" id="SBz-oF-VOT"/>
+                            <constraint firstItem="2Md-el-qt7" firstAttribute="trailing" secondItem="oF1-1G-9hc" secondAttribute="trailing" constant="20" id="cUw-LK-n5M"/>
+                            <constraint firstItem="BRP-mU-CAd" firstAttribute="top" secondItem="oF1-1G-9hc" secondAttribute="bottom" constant="49" id="hrQ-LT-SnO"/>
+                            <constraint firstItem="2Md-el-qt7" firstAttribute="trailing" secondItem="RgJ-5D-EbB" secondAttribute="trailing" constant="41" id="q7Z-N7-phF"/>
+                            <constraint firstItem="BRP-mU-CAd" firstAttribute="centerX" secondItem="2Md-el-qt7" secondAttribute="centerX" id="vL0-t4-hsE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="oF1-1G-9hc" id="Zmk-XX-5af"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9U-vk-qmr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="806" y="94"/>
+            <point key="canvasLocation" x="1576.8115942028987" y="93.75"/>
         </scene>
     </scenes>
     <resources>

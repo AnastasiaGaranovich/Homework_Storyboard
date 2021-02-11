@@ -23,7 +23,8 @@ class SignInViewController: UIViewController {
         if saveTokenSwitch.isOn {
             Defaults.token = Date()
         }
-        showController(storyboard: "MainScreen", name: "MainScreenViewController")
+        AppData.loadUser()
+        showController(storyboard: "MainScreen", name: "MainTabBarController")
     }
     
     private func signInButtonHidden() -> Bool {

@@ -6,4 +6,7 @@ class AppData {
     static func saveUser() {
         Defaults.user = user
     }
+    static func loadUser() {
+        user = Defaults.user
+    }
 }
