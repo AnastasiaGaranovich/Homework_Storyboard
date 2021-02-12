@@ -12,6 +12,8 @@
 		5D25D87A25D43ED70025F4F4 /* UserDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D25D87925D43ED70025F4F4 /* UserDataCell.xib */; };
 		5D25D87D25D440DD0025F4F4 /* UserDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25D87C25D440DD0025F4F4 /* UserDataCell.swift */; };
 		5D25D88025D4495A0025F4F4 /* EditTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25D87F25D4495A0025F4F4 /* EditTextFieldCell.swift */; };
+		5D8307A725D6F3AB003736D1 /* EditDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8307A625D6F3AB003736D1 /* EditDateCell.swift */; };
+		5D8307AA25D6F5D2003736D1 /* EditSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8307A925D6F5D2003736D1 /* EditSwitchCell.swift */; };
 		5D90F1E425CE9BE600524FC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D90F1E325CE9BE600524FC3 /* User.swift */; };
 		5D90F1E725CE9D3300524FC3 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D90F1E625CE9D3300524FC3 /* MainScreen.storyboard */; };
 		5D90F1EA25CEAD9900524FC3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D90F1E925CEAD9900524FC3 /* Utils.swift */; };
@@ -46,6 +48,8 @@
 		5D25D87925D43ED70025F4F4 /* UserDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDataCell.xib; sourceTree = "<group>"; };
 		5D25D87C25D440DD0025F4F4 /* UserDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCell.swift; sourceTree = "<group>"; };
 		5D25D87F25D4495A0025F4F4 /* EditTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTextFieldCell.swift; sourceTree = "<group>"; };
+		5D8307A625D6F3AB003736D1 /* EditDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDateCell.swift; sourceTree = "<group>"; };
+		5D8307A925D6F5D2003736D1 /* EditSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSwitchCell.swift; sourceTree = "<group>"; };
 		5D90F1E325CE9BE600524FC3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5D90F1E625CE9D3300524FC3 /* MainScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
 		5D90F1E925CEAD9900524FC3 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				5D25D87925D43ED70025F4F4 /* UserDataCell.xib */,
 				5D25D87C25D440DD0025F4F4 /* UserDataCell.swift */,
 				5D25D87F25D4495A0025F4F4 /* EditTextFieldCell.swift */,
+				5D8307A625D6F3AB003736D1 /* EditDateCell.swift */,
+				5D8307A925D6F5D2003736D1 /* EditSwitchCell.swift */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DBEB82025CB07F1009FA5E2 /* SignInViewController.swift in Sources */,
+				5D8307AA25D6F5D2003736D1 /* EditSwitchCell.swift in Sources */,
 				5D25D88025D4495A0025F4F4 /* EditTextFieldCell.swift in Sources */,
 				5DBEB83525CB1821009FA5E2 /* CreateAccountController.swift in Sources */,
 				5D00CF7125D5C68500EE2276 /* UserField.swift in Sources */,
@@ -334,6 +341,7 @@
 				5DBEB81E25CB07F1009FA5E2 /* SceneDelegate.swift in Sources */,
 				5DB008CF25CDF987006EEBC8 /* PasswordViewController.swift in Sources */,
 				5DD6DDA725D059B600FF9BDE /* AppData.swift in Sources */,
+				5D8307A725D6F3AB003736D1 /* EditDateCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

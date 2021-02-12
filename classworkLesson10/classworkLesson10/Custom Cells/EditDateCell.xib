@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="beL-2D-P3e">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EditDateCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="beL-2D-P3e" customClass="EditDateCell" customModule="classworkLesson10" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="beL-2D-P3e" id="jU8-uZ-jPw">
@@ -30,9 +30,17 @@
                         <rect key="frame" x="348" y="7" width="46" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="editDoneButtonPressed:" destination="beL-2D-P3e" eventType="touchUpInside" id="TIL-oH-dex"/>
+                        </connections>
                     </button>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="editButtonDone" destination="R3j-M2-6Sr" id="zVM-qD-h3c"/>
+                <outlet property="editDate" destination="xWj-Dv-LFx" id="rBz-UV-v1d"/>
+                <outlet property="profileLabel" destination="fyP-qJ-S98" id="lNo-hH-vEQ"/>
+            </connections>
             <point key="canvasLocation" x="100" y="58"/>
         </tableViewCell>
     </objects>
