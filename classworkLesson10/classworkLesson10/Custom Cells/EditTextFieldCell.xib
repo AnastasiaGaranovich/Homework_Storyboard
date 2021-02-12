@@ -39,7 +39,6 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="editDoneButton" destination="s89-uJ-znk" id="0gT-oy-mTF"/>
                 <outlet property="editTextField" destination="ib0-5d-k9p" id="1cy-Be-lPl"/>
                 <outlet property="profileLabel" destination="dfy-im-lcT" id="Wwj-KF-tgk"/>
             </connections>

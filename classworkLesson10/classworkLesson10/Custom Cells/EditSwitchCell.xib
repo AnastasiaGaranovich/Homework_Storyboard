@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dF4-3P-7sB">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EditSwitchCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dF4-3P-7sB" customClass="EditSwitchCell" customModule="classworkLesson10" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dF4-3P-7sB" id="32Z-8O-6Td">
@@ -30,9 +30,16 @@
                         <rect key="frame" x="343" y="6" width="46" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="editDoneButtonPressed:" destination="dF4-3P-7sB" eventType="touchUpInside" id="OeI-rt-VJE"/>
+                        </connections>
                     </button>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="editSwitch" destination="SDu-cm-0p4" id="vcM-zY-u1u"/>
+                <outlet property="profileLabel" destination="UKh-7J-vx4" id="vGw-wA-Xjs"/>
+            </connections>
             <point key="canvasLocation" x="161" y="2"/>
         </tableViewCell>
     </objects>

@@ -40,7 +40,6 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="editDataButton" destination="CiM-Gz-jHH" id="a5d-y1-Fg6"/>
                 <outlet property="profileLabel" destination="F9G-xY-FQG" id="Cxe-7Y-E7L"/>
                 <outlet property="usersDataLabel" destination="VQt-k8-ww0" id="ioz-aS-09p"/>
             </connections>

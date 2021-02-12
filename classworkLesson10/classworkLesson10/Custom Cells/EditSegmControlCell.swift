@@ -1,8 +1,9 @@
 import UIKit
 
-class EditSwitchCell: UITableViewCell {
+class EditSegmControlCell: UITableViewCell {
+    
     @IBOutlet weak var profileLabel: UILabel!
-    @IBOutlet weak var editSwitch: UISwitch!
+    @IBOutlet weak var editSegmControl: UISegmentedControl!
     
     weak var delegate: UserDataCellDelegate?
     var field: UserField!

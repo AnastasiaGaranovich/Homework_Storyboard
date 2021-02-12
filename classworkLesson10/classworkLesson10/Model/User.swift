@@ -28,7 +28,7 @@ class User: Codable {
     init() {
     }
     
-    func getData(fieldName: String) -> String {
+    func getStringData(fieldName: String) -> String {
         switch fieldName {
         case "Name":
             return name
@@ -44,6 +44,27 @@ class User: Codable {
             return vegetarian.toString
         case "Kids":
             return amountOfChildren.description
+        default:
+            return "Error"
+        }
+    }
+    
+    func getData(fieldName: String) -> Any {
+        switch fieldName {
+        case "Name":
+            return name
+        case "Surname":
+            return surname
+        case "Date of birth":
+            return dateOfBirth
+        case "Sex":
+            return sex
+        case "Smoking":
+            return smoking
+        case "Vegetarian":
+            return vegetarian
+        case "Kids":
+            return amountOfChildren
         default:
             return "Error"
         }
