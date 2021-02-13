@@ -8,43 +8,54 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EditSegmControlCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aR4-zP-YS7" customClass="EditSegmControlCell" customModule="classworkLesson10" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="EditSegmControlCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="45" id="aR4-zP-YS7" customClass="EditSegmControlCell" customModule="classworkLesson10" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="45"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aR4-zP-YS7" id="bbu-p0-qEO">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="333" height="45"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XU-sp-sjm">
-                        <rect key="frame" x="16" y="12" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XU-sp-sjm">
+                        <rect key="frame" x="20" y="12" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Y04-fO-vue">
-                        <rect key="frame" x="132" y="7" width="131" height="31"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Y04-fO-vue">
+                        <rect key="frame" x="101" y="7" width="131" height="32"/>
                         <segments>
-                            <segment title="First"/>
-                            <segment title="Second"/>
+                            <segment title="Man"/>
+                            <segment title="Woman"/>
                         </segments>
                     </segmentedControl>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Id-5g-LVM">
-                        <rect key="frame" x="331" y="7" width="46" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" title="Button"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Id-5g-LVM">
+                        <rect key="frame" x="261" y="7.5" width="46" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="EKl-8R-PrM"/>
+                            <constraint firstAttribute="height" constant="30" id="WFo-OE-ySR"/>
+                        </constraints>
+                        <state key="normal" title="Done">
+                            <color key="titleColor" red="0.81568627449999997" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
                         <connections>
                             <action selector="editDoneButtonPressed:" destination="aR4-zP-YS7" eventType="touchUpInside" id="PQz-B6-cIw"/>
                         </connections>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="8XU-sp-sjm" firstAttribute="centerY" secondItem="bbu-p0-qEO" secondAttribute="centerY" id="83w-3J-m6K"/>
+                    <constraint firstItem="Y04-fO-vue" firstAttribute="centerX" secondItem="bbu-p0-qEO" secondAttribute="centerX" id="JhR-yp-1Y2"/>
+                    <constraint firstItem="Y04-fO-vue" firstAttribute="centerY" secondItem="bbu-p0-qEO" secondAttribute="centerY" id="RuT-mv-CPA"/>
+                    <constraint firstItem="1Id-5g-LVM" firstAttribute="centerY" secondItem="bbu-p0-qEO" secondAttribute="centerY" id="ihl-xI-6Nh"/>
+                    <constraint firstAttribute="trailing" secondItem="1Id-5g-LVM" secondAttribute="trailing" constant="26" id="y5K-r5-jfa"/>
+                    <constraint firstItem="8XU-sp-sjm" firstAttribute="leading" secondItem="bbu-p0-qEO" secondAttribute="leading" constant="20" symbolic="YES" id="yNi-T5-2bK"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="editSegmControl" destination="Y04-fO-vue" id="jbC-eS-beo"/>
                 <outlet property="profileLabel" destination="8XU-sp-sjm" id="b5u-Af-k1g"/>
             </connections>
-            <point key="canvasLocation" x="136" y="10"/>
+            <point key="canvasLocation" x="76.08695652173914" y="9.7098214285714288"/>
         </tableViewCell>
     </objects>
 </document>

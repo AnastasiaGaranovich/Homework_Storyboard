@@ -14,12 +14,13 @@ class UserDataViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func logOutButtonPressed(_ sender: UIButton) {
-        showController(storyboard: "SignIn", name: "SignInViewController")
+        Defaults.clearToken()
+        showController(storyboard: "SignIn", name: "SignInNavigation")
     }
     
     @IBAction func deleteAccountButtonPressed(_ sender: UIButton) {
         Defaults.clearUser()
-        showController(storyboard: "SignIn", name: "SignInViewController")
+        showController(storyboard: "SignIn", name: "SignInNavigation")
     }
     
     override func viewDidLoad() {
@@ -30,12 +31,17 @@ class UserDataViewController: UIViewController {
         tableView.register(UINib(nibName: "EditSwitchCell", bundle: nil), forCellReuseIdentifier: "EditSwitchCell")
         tableView.register(UINib(nibName: "EditSegmControlCell", bundle: nil), forCellReuseIdentifier: "EditSegmControlCell")
         tableView.register(UINib(nibName: "EditStepperCell", bundle: nil), forCellReuseIdentifier: "EditStepperCell")
+        tableView.separatorColor = UIColor.clear
     }
 }
 
-extension UserDataViewController: UITableViewDataSource {
+extension UserDataViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return array.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return array[indexPath.row].height
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

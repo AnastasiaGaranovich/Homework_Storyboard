@@ -34,8 +34,8 @@
                                     <action selector="deleteAccountButtonPressed:" destination="Md9-9J-ebW" eventType="touchUpInside" id="R7Z-Jt-RZs"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oF1-1G-9hc">
-                                <rect key="frame" x="20" y="133" width="374" height="576"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oF1-1G-9hc">
+                                <rect key="frame" x="0.0" y="133" width="414" height="576"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Md9-9J-ebW" id="kp2-7y-lNy"/>
@@ -47,10 +47,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2Md-el-qt7" firstAttribute="bottom" secondItem="BRP-mU-CAd" secondAttribute="bottom" constant="74" id="7Ll-ko-vCi"/>
-                            <constraint firstItem="oF1-1G-9hc" firstAttribute="leading" secondItem="2Md-el-qt7" secondAttribute="leading" constant="20" id="KvU-eQ-jRs"/>
+                            <constraint firstItem="oF1-1G-9hc" firstAttribute="leading" secondItem="2Md-el-qt7" secondAttribute="leading" id="KvU-eQ-jRs"/>
                             <constraint firstItem="oF1-1G-9hc" firstAttribute="top" secondItem="2Md-el-qt7" secondAttribute="top" constant="89" id="RdM-8U-Xmc"/>
                             <constraint firstItem="RgJ-5D-EbB" firstAttribute="top" secondItem="2Md-el-qt7" secondAttribute="top" constant="14" id="SBz-oF-VOT"/>
-                            <constraint firstItem="2Md-el-qt7" firstAttribute="trailing" secondItem="oF1-1G-9hc" secondAttribute="trailing" constant="20" id="cUw-LK-n5M"/>
+                            <constraint firstItem="2Md-el-qt7" firstAttribute="trailing" secondItem="oF1-1G-9hc" secondAttribute="trailing" id="cUw-LK-n5M"/>
                             <constraint firstItem="BRP-mU-CAd" firstAttribute="top" secondItem="oF1-1G-9hc" secondAttribute="bottom" constant="49" id="hrQ-LT-SnO"/>
                             <constraint firstItem="2Md-el-qt7" firstAttribute="trailing" secondItem="RgJ-5D-EbB" secondAttribute="trailing" constant="41" id="q7Z-N7-phF"/>
                             <constraint firstItem="BRP-mU-CAd" firstAttribute="centerX" secondItem="2Md-el-qt7" secondAttribute="centerX" id="vL0-t4-hsE"/>

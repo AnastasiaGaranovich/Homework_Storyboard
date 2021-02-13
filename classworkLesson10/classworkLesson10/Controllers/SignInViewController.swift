@@ -28,9 +28,10 @@ class SignInViewController: UIViewController {
             let viewController = getControllerFrom(storyboard: "CreateAccount", name: "VerificationViewController") as! VerificationViewController
             viewController.storyboardName = "MainScreen"
             viewController.controllerName = "MainTabBarController"
-            showController(viewController: viewController)
+            viewController.push = false
+            pushController(viewController: viewController)
         } else {
-            errorLabel.text = " Error. Incorrect username or password"
+            errorLabel.text = "Incorrect username or password"
         }
     }
     
@@ -60,6 +61,7 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -26,5 +26,9 @@ class Defaults {
     }
     static func clearUser() {
         UserDefaults.standard.set(nil, forKey: userKey)
+        clearToken()
+    }
+    static func clearToken() {
+        UserDefaults.standard.setValue(nil, forKey: accessKey)
     }
 }

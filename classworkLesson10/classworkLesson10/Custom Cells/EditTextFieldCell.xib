@@ -15,28 +15,40 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfy-im-lcT">
-                        <rect key="frame" x="40" y="12" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfy-im-lcT">
+                        <rect key="frame" x="20" y="11.5" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ib0-5d-k9p">
-                        <rect key="frame" x="116" y="5" width="213" height="34"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ib0-5d-k9p">
+                        <rect key="frame" x="72" y="5" width="260" height="34"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s89-uJ-znk">
-                        <rect key="frame" x="344" y="7" width="46" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" title="Button"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s89-uJ-znk">
+                        <rect key="frame" x="342" y="7" width="46" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="7nv-24-EZh"/>
+                            <constraint firstAttribute="width" constant="46" id="CaO-7p-Bq2"/>
+                        </constraints>
+                        <state key="normal" title="Done">
+                            <color key="titleColor" red="0.81568627449999997" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
                         <connections>
                             <action selector="editDoneButtonPressed:" destination="Qnf-GU-ggX" eventType="touchUpInside" id="82u-Th-vuh"/>
                         </connections>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="dfy-im-lcT" firstAttribute="centerY" secondItem="5Lm-pt-bY9" secondAttribute="centerY" id="6tl-d9-gXD"/>
+                    <constraint firstItem="dfy-im-lcT" firstAttribute="leading" secondItem="5Lm-pt-bY9" secondAttribute="leading" constant="20" symbolic="YES" id="AFS-xN-BDQ"/>
+                    <constraint firstAttribute="trailing" secondItem="s89-uJ-znk" secondAttribute="trailing" constant="26" id="IcC-x7-jq0"/>
+                    <constraint firstItem="ib0-5d-k9p" firstAttribute="leading" secondItem="dfy-im-lcT" secondAttribute="trailing" constant="10" id="XUC-1B-izB"/>
+                    <constraint firstItem="ib0-5d-k9p" firstAttribute="centerY" secondItem="5Lm-pt-bY9" secondAttribute="centerY" id="r6q-G7-YaA"/>
+                    <constraint firstItem="s89-uJ-znk" firstAttribute="centerY" secondItem="5Lm-pt-bY9" secondAttribute="centerY" id="xC2-Mo-7yA"/>
+                    <constraint firstItem="s89-uJ-znk" firstAttribute="leading" secondItem="ib0-5d-k9p" secondAttribute="trailing" constant="10" id="zQq-ry-MBp"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="editTextField" destination="ib0-5d-k9p" id="1cy-Be-lPl"/>

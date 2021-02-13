@@ -15,29 +15,43 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9G-xY-FQG">
-                        <rect key="frame" x="20" y="12" width="154" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9G-xY-FQG">
+                        <rect key="frame" x="20" y="11.5" width="41.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiM-Gz-jHH">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiM-Gz-jHH">
                         <rect key="frame" x="342" y="7" width="46" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" title="Button"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="nlE-QU-1RR"/>
+                            <constraint firstAttribute="width" constant="46" id="vcV-CV-3u1"/>
+                        </constraints>
+                        <state key="normal" title="Edit">
+                            <color key="titleColor" red="0.81568627449999997" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
                         <connections>
                             <action selector="editButtonPressed:" destination="Zv4-nO-G8f" eventType="touchUpInside" id="mzM-tD-VvX"/>
                         </connections>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQt-k8-ww0">
-                        <rect key="frame" x="218" y="12" width="105" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQt-k8-ww0">
+                        <rect key="frame" x="67.5" y="11.5" width="268.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="CiM-Gz-jHH" firstAttribute="leading" secondItem="VQt-k8-ww0" secondAttribute="trailing" constant="6" id="5S5-S3-icQ"/>
+                    <constraint firstItem="F9G-xY-FQG" firstAttribute="centerY" secondItem="bV5-M8-KOG" secondAttribute="centerY" id="5S6-Oi-HKa"/>
+                    <constraint firstAttribute="trailing" secondItem="CiM-Gz-jHH" secondAttribute="trailing" constant="26" id="Rro-eA-KKf"/>
+                    <constraint firstItem="CiM-Gz-jHH" firstAttribute="centerY" secondItem="bV5-M8-KOG" secondAttribute="centerY" id="RvH-0S-IWK"/>
+                    <constraint firstItem="VQt-k8-ww0" firstAttribute="leading" secondItem="F9G-xY-FQG" secondAttribute="trailing" constant="6" id="TWo-2l-MNL"/>
+                    <constraint firstItem="F9G-xY-FQG" firstAttribute="leading" secondItem="bV5-M8-KOG" secondAttribute="leading" constant="20" symbolic="YES" id="Zai-tf-GAA"/>
+                    <constraint firstItem="CiM-Gz-jHH" firstAttribute="centerY" secondItem="VQt-k8-ww0" secondAttribute="centerY" id="gAn-sC-DG2"/>
+                    <constraint firstItem="VQt-k8-ww0" firstAttribute="centerY" secondItem="bV5-M8-KOG" secondAttribute="centerY" id="sF6-PT-jGZ"/>
+                    <constraint firstItem="VQt-k8-ww0" firstAttribute="leading" secondItem="F9G-xY-FQG" secondAttribute="trailing" constant="6" id="wTQ-Ad-nH5"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="profileLabel" destination="F9G-xY-FQG" id="Cxe-7Y-E7L"/>

@@ -35,7 +35,9 @@ class User: Codable {
         case "Surname":
             return surname
         case "Date of birth":
-            return dateOfBirth.description
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd/MM/YY"
+            return dateFormatter.string(from: dateOfBirth)
         case "Sex":
             return sex.toString
         case "Smoking":
