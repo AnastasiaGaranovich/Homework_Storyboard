@@ -85,7 +85,7 @@ class User: Codable {
         case "Smoking":
             smoking = data as! Bool
         case "Vegetarian":
-            smoking = data as! Bool
+            vegetarian = data as! Bool
         case "Kids":
             amountOfChildren = data as! Int
         default:
