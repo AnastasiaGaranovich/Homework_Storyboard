@@ -24,7 +24,14 @@ class SignInViewController: UIViewController {
             Defaults.token = Date()
         }
         AppData.loadUser()
-        showController(storyboard: "MainScreen", name: "MainTabBarController")
+        if emailTextField.text == AppData.user.login && passwordTextField.text == AppData.user.password {
+            let viewController = getControllerFrom(storyboard: "CreateAccount", name: "VerificationViewController") as! VerificationViewController
+            viewController.storyboardName = "MainScreen"
+            viewController.controllerName = "MainTabBarController"
+            showController(viewController: viewController)
+        } else {
+            errorLabel.text = " Error. Incorrect username or password"
+        }
     }
     
     private func signInButtonHidden() -> Bool {

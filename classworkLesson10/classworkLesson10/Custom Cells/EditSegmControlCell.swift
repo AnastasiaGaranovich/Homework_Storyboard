@@ -9,6 +9,6 @@ class EditSegmControlCell: UITableViewCell {
     var field: UserField!
     
     @IBAction func editDoneButtonPressed(_ sender: UIButton) {
-        delegate?.didPressButton(field: field)
+        delegate?.didPressButton(field: field, data: editSegmControl.selectedSegmentIndex)
     }
 }

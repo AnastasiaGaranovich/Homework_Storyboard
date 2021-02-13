@@ -13,16 +13,12 @@ class UserDataViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    func didPressButton(user: User) {
-        
-    }
-    
     @IBAction func logOutButtonPressed(_ sender: UIButton) {
         showController(storyboard: "SignIn", name: "SignInViewController")
     }
     
     @IBAction func deleteAccountButtonPressed(_ sender: UIButton) {
-        
+        Defaults.clearUser()
         showController(storyboard: "SignIn", name: "SignInViewController")
     }
     
@@ -96,16 +92,20 @@ extension UserDataViewController: UITableViewDataSource {
             cell.editKidsLabel.text = String(Int(cell.editStepper.value))
             return cell
         }
-        
         return UITableViewCell()
     }
 }
 
 extension UserDataViewController: UserDataCellDelegate {
     
-    func didPressButton(field: UserField) {
+    func didPressButton(field: UserField, data: Any) {
         field.editing.toggle()
         tableView.reloadData()
+        if field.editing {
+            return
+        }
+        AppData.user.setData(fieldName: field.name, data: data)
+        AppData.saveUser()
     }
 }
 

@@ -9,6 +9,9 @@ class VerificationViewController: UIViewController {
     private var verificationCode = 1111
     private var fieldsIndex = 0
     
+    var storyboardName: String!
+    var controllerName: String!
+    
     @IBAction func codeTextFieldsChanged(_ sender: UITextField) {
         if sender.isEmpty && fieldsIndex > 0 {
             fieldsIndex -= 1
@@ -17,7 +20,7 @@ class VerificationViewController: UIViewController {
         }
         if sender.tag == 3 {
             if checkCode() {
-                pushController(storyboard: "CreateAccount", name: "PasswordViewController")
+                pushController(storyboard: storyboardName, name: controllerName)
             }
             else {
                 errorLabel.text = "Error. Invalid verification code."

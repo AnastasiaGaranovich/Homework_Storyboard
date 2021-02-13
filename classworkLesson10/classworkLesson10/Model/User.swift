@@ -69,4 +69,25 @@ class User: Codable {
             return "Error"
         }
     }
+    
+    func setData(fieldName: String, data: Any) {
+        switch fieldName {
+        case "Name":
+            name = data as! String
+        case "Surname":
+            surname = data as! String
+        case "Date of birth":
+            dateOfBirth = data as! Date
+        case "Sex":
+            sex = Sex(rawValue: data as! Int) ?? .man
+        case "Smoking":
+            smoking = data as! Bool
+        case "Vegetarian":
+            smoking = data as! Bool
+        case "Kids":
+            amountOfChildren = data as! Int
+        default:
+            print("Error")
+        }
+    }
 }

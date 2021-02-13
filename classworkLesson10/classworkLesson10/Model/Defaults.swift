@@ -24,4 +24,7 @@ class Defaults {
             UserDefaults.standard.set(try? PropertyListEncoder().encode(newValue), forKey: userKey)
         }
     }
+    static func clearUser() {
+        UserDefaults.standard.set(nil, forKey: userKey)
+    }
 }

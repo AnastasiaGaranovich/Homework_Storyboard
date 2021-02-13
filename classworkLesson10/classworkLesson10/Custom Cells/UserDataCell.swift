@@ -1,7 +1,7 @@
 import UIKit
 
 protocol UserDataCellDelegate: class {
-    func didPressButton(field: UserField)
+    func didPressButton(field: UserField, data: Any)
 }
 
 class UserDataCell: UITableViewCell {
@@ -13,7 +13,7 @@ class UserDataCell: UITableViewCell {
     var field: UserField!
     
     @IBAction func editButtonPressed(_ sender: UIButton) {
-        delegate?.didPressButton(field: field)
+        delegate?.didPressButton(field: field, data: "")
     }
     
 }

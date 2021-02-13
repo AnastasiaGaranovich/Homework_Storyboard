@@ -18,7 +18,10 @@ class CreateAccountController: UIViewController {
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
         if let userEmail = emailTextField.text {
             AppData.user.login = userEmail
-            pushController(storyboard: "CreateAccount", name: "VerificationViewController")
+            let viewController = getControllerFrom(storyboard: "CreateAccount", name: "VerificationViewController") as! VerificationViewController
+            viewController.storyboardName = "CreateAccount"
+            viewController.controllerName = "PasswordViewController"
+            pushController(viewController: viewController)
         }
     }
     

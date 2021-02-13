@@ -15,6 +15,6 @@ class EditStepperCell: UITableViewCell {
     }
     
     @IBAction func editDoneButtonPressed(_ sender: UIButton) {
-        delegate?.didPressButton(field: field)
+        delegate?.didPressButton(field: field, data: Int(editStepper.value))
     }
 }
